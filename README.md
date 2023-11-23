@@ -12,7 +12,7 @@ Usually there is no more graphical UI available to access files & folders when y
 | func                     | app                       |
 | ------------------------ | ------------------------- |
 | Multi window             | [tmux](tmux.md)           |
-| Editing                  | [tmux](tmux.md)           |
+| Editing                  | [vim](vim.md)           |
 | Copy / move files around | [linux_cmd](linux_cmd.md) |
 | Dev env                  | [Docker](docker.md)       |
 | View hardware usage      | `htop`                    |
