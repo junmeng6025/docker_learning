@@ -46,6 +46,10 @@ Session
 
     ***
 ### commands
+- activate mouse 
+  ```bash
+  tmux set -g mouse on
+  ```
 - view the running tmux sessions
     ```bash
     tmux ls

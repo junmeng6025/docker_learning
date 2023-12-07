@@ -31,6 +31,10 @@ sudo setfacl -m user:$USER:rw /var/run/docker.sock
 ```bash
 cat /etc/*release
 ```
+### Build an image from local with Dockerfile
+```bash
+docker build -t ${ImageTag} .
+```
 ### Pull & Run
 ```bash
 docker pull ${ImageName:version}   
@@ -92,6 +96,15 @@ docker rmi YOUR_DOCKERHUB_NAME/IMAGE_NAME
 docker tag ${IMAGE_ID} ${NEW_IMAGE_NAME}
 docker rmi ${OLD_IMAGE_NAME}
 ```
+### Remove image
+```bash
+docker rmi ${ImageID}
+```
+
+### Purne build cache
+```bash
+docker builder prune
+```
 
 ### List & Check
 ```bash
@@ -126,15 +139,19 @@ CONTAINER_NAME="CONTAINER_NAME"
 printf "Using docker image %s\n" $DOCKER_NAME
 
 # Port bindings: -p host_port:container_port
-data="DATA/PATH/TO/LOAD"
-workspace="WORKSPACE/PATH/TO/LOAD"
+data="/LOCAL/PATH/TO/MAP"
+workspace="/LOCAL/PATH/TO/MAP"
 
 docker run -it --gpus all \
-           --shm-size=4g \
+           --shm-size=8g \
            -v $data:/data \
            -v $workspace:/workspace \
            --name ${CONTAINER_NAME} \
            ${DOCKER_NAME}
+```
+the attribute `-v` maps/mounts a local directory to docker container's file system:
+```sh
+-v /local/path/:/docker/path
 ```
 
 ## 4) Workflow with Docker
