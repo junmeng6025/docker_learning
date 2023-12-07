@@ -155,7 +155,7 @@ the attribute `-v` maps/mounts a local directory to docker container's file syst
 ```
 
 ## 4) Workflow with Docker
-see [demo_app README](demo_app/README.md)
+see [demo_app README](docker_demo/README.md)
 
 ## 5) Commit Changes to Image
 ```bash
