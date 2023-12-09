@@ -16,3 +16,7 @@ Usually there is no more graphical UI available to access files & folders when y
 | Copy / move files around | [linux_cmd](linux_cmd.md) |
 | Dev env                  | [Docker](docker.md)       |
 | View hardware usage      | `htop`                    |
+
+# VS-Code Addons
+- Remote-SSH
+- Dev Containers
