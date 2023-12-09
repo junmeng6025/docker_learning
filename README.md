@@ -20,3 +20,16 @@ Usually there is no more graphical UI available to access files & folders when y
 # VS-Code Addons
 - Remote-SSH
 - Dev Containers
+
+# CUDA
+## vis nvidia-smi in real time:
+```bash
+watch -n 0.1 nvidia-smi
+```
+the nvidia refreshes every 0.1s
+
+## choose GPU device:
+in docker, run:
+```bash
+export CUDA_VISIBLE_DEVICES=1
+```
