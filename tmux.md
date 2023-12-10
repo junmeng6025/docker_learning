@@ -58,7 +58,9 @@ Session
     ```bash
     tmux attach -t ${SessionID}
     ```
-    all the stuff would be preserved
+    all the stuff would be preserved  
+    to QUIT but NOT KILL the session:  
+    Ctrl + B: Ctrl + Z
 - rename tmux session OUT IN HOST terminal
     ```bash
     tmux rename-session -t ${SessionID} ${SessionName}
