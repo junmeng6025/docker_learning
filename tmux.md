@@ -76,5 +76,5 @@ Session
     ```
 - kill sessions that we don't use anymore
     ```bash
-    tmux rename-session -t ${SessionID/SessionName}
+    tmux kill ${SessionID/SessionName}
     ```
