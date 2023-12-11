@@ -13,7 +13,7 @@ Session
 |   |   Pane
 ```
 ## Manipulate tmux windows
-1. Hit [`Ctrl` + `B`] to wait for short-cut keys
+1. Hit [ <kbd>Ctrl</kbd> + <kbd>B</kbd>] to wait for short-cut keys
 2. Then, press the short-cut keys to do what you want
 
     ### Pane
