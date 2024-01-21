@@ -3,6 +3,17 @@
 ```bash
 sudo chmod a+rwx ${FolderName}
 ```
+# Zip files
+cd to directory containing files to be zipped
+```bash
+sudo zip -r ../zip_file.zip .
+```
+> zip file would be generated to the parent path
+cd to parent path where the folder to be zipped exists
+```bash
+sudo zip -r /path/to/save/zip_file.zip /path/to/folder
+```
+
 # Copy and paste
 ## single file
 ```bash
