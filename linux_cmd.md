@@ -50,6 +50,15 @@ mv /path/to/file/to/be/moved .
 rm -rf ${FolderName}
 ```
 
+# Select GPU device
+```bash
+export CUDA_VISIBLE_DEVICES=${GPU_id}
+```
+to check current GPU id:
+```bash
+echo ${CUDA_VISIBLE_DEVICES}
+```
+
 # Visualize DEBUG_LOG
 use `rapid-photo-downloader`
 ```bash
