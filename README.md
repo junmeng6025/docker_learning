@@ -2,7 +2,7 @@
 
 # 1. Connect to WS
 ```bash
-ssh USER_NAME@WORKSTATION_IP
+ssh {UserName}@{IP_address}
 ```
 then give the password
 
