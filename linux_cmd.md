@@ -26,8 +26,16 @@ cp -r /path/to/folder/to/be/copied /path/to/destination_folder
 ```
 ## from SSH Remote to Host
 ```bash
-sudo scp -r ${UserName}@${RemoteIP}:${File/FolderPath} ${LocalPath}
+scp -r ${UserName}@${RemoteIP}:${FolderPath} ${LocalPath}
 ```
+```bash
+scp ${UserName}@${RemoteIP}:${Path/To/File} ${LocalPath}
+```
+```bash
+cd ${Expected/Local/Path}
+scp ${UserName}@${RemoteIP}:${Path/To/File} .
+```
+For WSL, use `/mnt` first to direct to local
 
 # Cut and paste (Move file)
 ```bash
