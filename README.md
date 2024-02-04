@@ -11,7 +11,7 @@ Usually there is no more graphical UI available to access files & folders when y
 
 | func                     | app                       |
 | ------------------------ | ------------------------- |
-| Multi window             | [tmux](tmux.md)           |
+| Multi window; Hanging on session             | [tmux](tmux.md)           |
 | Editing                  | [vim](vim.md)           |
 | Copy / move files around | [linux_cmd](linux_cmd.md) |
 | Dev env                  | [Docker](docker.md)       |
