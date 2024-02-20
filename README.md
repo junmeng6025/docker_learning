@@ -4,7 +4,18 @@
 ```bash
 ssh {UserName}@{IP_address}
 ```
-then give the password
+then give the password  
+
+### Manage process:
+Sometimes an unreleased training process should be killed manually
+```bash
+ps aux | grep {keyword}
+```
+here we give `train` as key word to find out the training process.  
+Get the Process ID in the list, then kill it by ID:
+```bash
+kill {ProcessID}
+```
 
 # 2. Utils with Linux
 Usually there is no more graphical UI available to access files & folders when you work with workstation via your local terminal. All should be execuetd with linux commands. There're some utils that can make your work easier and more efficient:
