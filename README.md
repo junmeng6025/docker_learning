@@ -16,6 +16,14 @@ Get the Process ID in the list, then kill it by ID:
 ```bash
 kill {ProcessID}
 ```
+For process in GPU, use
+```bash
+nvidia-smi | grep 'python'
+```
+to find a process with the keyword `'python'`, and to kill, use
+```bash
+sudo kill -9 ${PID}
+```
 
 # 2. Utils with Linux
 Usually there is no more graphical UI available to access files & folders when you work with workstation via your local terminal. All should be execuetd with linux commands. There're some utils that can make your work easier and more efficient:
