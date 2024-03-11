@@ -77,7 +77,7 @@ I0311 12:00:01.281496 140462065710848 plugin.py:429] Monitor runs begin
 Serving TensorBoard on localhost; to expose to the network, use a proxy or pass --bind_all
 TensorBoard 2.10.1 at http://localhost:6007/ (Press CTRL+C to quit)
 ```
-Here we get its port in SSH-remote as: `6007`
+Here from the last line we know its port in SSH-remote is `6007`
 ### 2. Connect local host to remote via this port using SSH command
 ```bash
 ssh -L 6007:localhost:6007 ${username}@${remote_host}
