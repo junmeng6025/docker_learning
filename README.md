@@ -58,13 +58,14 @@ export CUDA_VISIBLE_DEVICES=1
 ```bash
 tensorboard --logdir=/path/to/logs/dir/
 ```
-Not that the DIR_PATH of logfile should be given, NOT the path of the logfile
+Not that the DIR_PATH of logfile should be given, NOT the path of the logfile  
 e.g.
 ```bash
 tensorboard --logdir=/data_hdd/jun/DockerMount/OpenPCDet_docker/output/kitti_models/pv_rcnn_relation_car_class_only/train-CarClass-k16-IP_mlp/20240310-135445/tensorboard/
 ```
 where containing the logfile `events.out.tfevents.1710078885.e8c0683eb2e1`  
-then get the return message
+  
+then get the return message:
 ```bash
 TensorFlow installation not found - running with reduced feature set.
 
