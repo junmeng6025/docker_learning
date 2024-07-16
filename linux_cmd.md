@@ -72,3 +72,12 @@ Turn off:
 ```bash
 export QT_DEBUG_PLUGINS=0 
 ```
+
+# Mount folders from another ssh
+```bash
+sudo sshfs -o allow_other,default_permissions usr_name@ip:/path/to/mount /mount/path/on/host
+```
+Sometimes the mount maight fail due to connection issues. To redo mount, an `unmount` should be executed first:
+```bash
+sudo umount -l /mount/path/on/host
+```
